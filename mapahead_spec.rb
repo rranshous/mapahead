@@ -79,7 +79,6 @@ describe MapAhead do
         diff_max = 0
         custom_enum = Enumerator.new do |y|
           enum_length.times do
-            puts "adding"
             y << count_read += 1
           end
         end
@@ -87,7 +86,6 @@ describe MapAhead do
           sleep 0.1
           count_worked += 1
           diff_max = [diff_max, count_read - count_worked].max
-          puts "counts: #{count_read} :: #{count_worked}"
         end.to_a
         expect(diff_max).to be <= 2
       end
