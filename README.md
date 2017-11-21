@@ -10,4 +10,4 @@ enum.each do |r|
 end
 ```
 
-see readme
+see specs
