@@ -89,7 +89,7 @@ describe MapAhead do
           diff_max = [diff_max, count_read - count_worked].max
           puts "counts: #{count_read} :: #{count_worked}"
         end.to_a
-        expect(diff_max).to eq 2
+        expect(diff_max).to be <= 2
       end
     end
 
