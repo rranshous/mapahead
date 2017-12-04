@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative 'mapahead.rb'
+require_relative '../lib/mapahead'
 require 'pry'
 
 Thread.abort_on_exception = true
